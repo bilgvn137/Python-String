@@ -26,8 +26,9 @@ def count_vowels(text):
 
 # Exercise 4
 def replace_vowels(text):
+	text1=text.lower()
 	new_str=""
-	for i in text:
+	for i in text1:
 		if i in "aeiou":
 			i='*'
 		new_str+=i
@@ -43,6 +44,7 @@ def count_words(text):
 # Exercise 6
 def find_longest_word(text):
 	maxim=0
+	longest=0
 	words = text.split()
 	for i in range(len(words)):
 		if len(words[i])>maxim:
