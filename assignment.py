@@ -2,30 +2,51 @@
 
 # Exercise 1
 def count_characters(text):
-    # Write your code here
-    pass
+	return len(text)
+	pass
 
 # Exercise 2
 def remove_spaces(text):
-    # Write your code here
-    pass
+	new_str=""
+	for i in text:
+		if i != " ":
+			new_str += i
+	return new_str
+	pass
 
 # Exercise 3
 def count_vowels(text):
-    # Write your code here
-    pass
+	count=0
+	text1=text.lower()
+	for i in  text1:
+		if i == 'a' or i=='e' or i=='i' or i=='o' or i=='u':
+			count += 1
+	return count
+	pass
 
 # Exercise 4
 def replace_vowels(text):
-    # Write your code here
-    pass
+	new_str=""
+	for i in text:
+		if i in "aeiou":
+			i='*'
+		new_str+=i
+	return new_str
+	pass
 
 # Exercise 5
 def count_words(text):
-    # Write your code here
-    pass
+	words=text.split()
+	return len(words)
+	pass
 
 # Exercise 6
 def find_longest_word(text):
-    # Write your code here
-    pass
+	maxim=0
+	words = text.split()
+	for i in range(len(words)):
+		if len(words[i])>maxim:
+			maxim=len(words[i])
+			longest=words[i]
+	return longest
+	pass
