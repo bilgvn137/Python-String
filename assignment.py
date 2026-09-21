@@ -26,10 +26,9 @@ def count_vowels(text):
 
 # Exercise 4
 def replace_vowels(text):
-	text1=text.lower()
 	new_str=""
-	for i in text1:
-		if i in "aeiou":
+	for i in text:
+		if i in "aeiouAEIOU":
 			i='*'
 		new_str+=i
 	return new_str
